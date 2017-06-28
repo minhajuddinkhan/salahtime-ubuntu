@@ -20,4 +20,6 @@ Give executable rights to the bash file and copy it to your binaries.
 
 
 
+![alt text](https://image.ibb.co/nJT0Nk/Screenshot_from_2017_06_28_15_58_27.png)
+
 
