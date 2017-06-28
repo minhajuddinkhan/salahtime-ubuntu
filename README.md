@@ -3,13 +3,18 @@ linux script that tells you namaz timings in your region!
 
 # Installation
 
+Clone the repository.
+
 1. ``` git clone https://github.com/minhajuddinkhan/salahtime-ubuntu ```
 
-2.  ``` cd salahtime-ubuntu ``` 
+Give executable rights to the bash file and copy it to your binaries.
 
-3. ``` sudo chmod +x namaz.sh ```
+2.  ``` cd salahtime-ubuntu && sudo chmod +x namaz && sudo cp namaz /usr/bin ```
 
-4. ``` sudo cp namaz.sh /usr/bin ```
+# Run
+
+3. type ``` namaz ``` in your terminal
+
 
 
 
