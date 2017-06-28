@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # API_KEY 
 apikey=ea664cded5ef5841bc3e94717607c9e3
 
