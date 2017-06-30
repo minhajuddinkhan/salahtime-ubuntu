@@ -2,7 +2,7 @@
 ![alt text](http://www.dar-aljalal.org/images/features-icon-1.png)
 
 # salahtime-ubuntu
-linux script that tells you namaz timings in your region!
+ubuntu desktop notifications for namaz timings.
 
 # Installation
 
