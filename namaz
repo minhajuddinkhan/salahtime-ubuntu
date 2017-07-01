@@ -1,6 +1,14 @@
 #!/bin/bash
 
 # API_KEY 
+isWorking=$(ping -s -q -w 1 -c 1 `ip r | grep default | cut -d ' ' -f 3` > /dev/null && echo 1 || echo 0)
+
+
+if [ $isWorking = 0 ]
+then	
+	notify-send "Your internet connection ain't working brother."
+else
+	
 apikey=ea664cded5ef5841bc3e94717607c9e3
 
 response=$(curl -s http://muslimsalat.com/daily.json?key=$apikey&jsoncallback=?)
@@ -16,6 +24,6 @@ maghrib=$(echo $response | jq -r '.items[0].maghrib')
 isha=$(echo $response | jq -r '.items[0].isha')
 
 notify-send "Namaz Timings" "\n fajr $fajr \n ishraq $ishraq \n dhuhr $dhuhr \n asr $asr \n maghrib $maghrib \n isha $isha"
-
+fi
 
 
